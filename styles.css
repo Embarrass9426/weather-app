@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #17324e;
+    font-family: 'Roboto', sans-serif;
+    color: #17324e;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow:0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #f0eee9;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 90px;
+}
+.container.expanded {
+    height: 610px;
+    padding-bottom: 20px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    padding: 8px 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.search-box i.fa-map-marker-alt {
+    font-size: 1.2rem;
+    color: #17324e;
+    margin-right: 8px;
+}
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    color: #17324e;
+}
+#cityInput {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#cityInput::placeholder {
+    text-transform: none;
+    font-weight: normal;
+}
+.search-box button {
+    border: none;
+    background: #e6f3ff;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.search-box button:hover {
+    background: #d0eaff;
+}
+.search-box button i {
+    font-size: 1.2rem;
+    color: #17324e;
+}
+.not-found {    
+    display: block;            
+    text-align: center;
+    margin-top: 20px;
+}
+.not-found img {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+.not-found p {
+    font-size: 1.1rem;
+    color: #555;
+}
+.weather-box {     
+    display: block;            
+    text-align: center;
+}
+.weather-box img.weather-icon {
+    width: 250px;
+    margin-bottom: 15px;
+}
+.weather-box .temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.weather-box .description {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #17324e
+}
+.weather-details {    
+    display: block;             
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+.weather-details .humidity,
+.weather-details .wind {
+    flex: 1;
+    text-align: center;
+}
+.weather-details i {
+    font-size: 2rem;
+    color: #17324e;
+    margin-bottom: 5px;
+}
+.weather-details span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.weather-details p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    color: #17324e
+}
